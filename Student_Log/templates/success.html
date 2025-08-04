@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Confirmed</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="header">
+    <h1>🎓 AKTU Student Portal</h1>
+  </div>
+
+  <div class="confirmation">
+    <div class="checkmark">✅</div>
+    <h2>Registration Successful</h2>
+    <p>Thank you, Abhay! The student details have been saved securely.</p>
+
+    <div class="student-info">
+      <p><strong>Roll No.:</strong> {{ roll }}</p>
+<p><strong>Email:</strong> {{ email }}</p>
+<p><strong>Branch:</strong> {{ branch }}</p>
+      <p><strong>Name:</strong> {{ name }}</p>
+    </div>
+
+    <a href="/" class="btn">Register Another Student</a>
+  </div>
+</body>
+</html>
